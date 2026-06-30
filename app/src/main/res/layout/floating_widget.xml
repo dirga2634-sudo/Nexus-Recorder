@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatingRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_floating_pill"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/btnFloatPauseResume"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_pause"
+        android:contentDescription="pause"/>
+
+    <ImageButton
+        android:id="@+id/btnFloatStop"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_stop_circle"
+        android:contentDescription="stop"/>
+
+    <ImageButton
+        android:id="@+id/btnFloatCamera"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="facecam"/>
+
+    <TextView
+        android:id="@+id/floatTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+</LinearLayout>

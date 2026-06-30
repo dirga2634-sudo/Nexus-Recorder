@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="@color/surface">
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:background="@color/primary_dark"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView android:id="@+id/fileName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/on_surface"
+            android:textStyle="bold" android:maxLines="1" android:ellipsize="end"/>
+
+        <TextView android:id="@+id/fileInfo" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/accent"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_share"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_delete"/>
+</LinearLayout>
